@@ -1,0 +1,171 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    background-color: #F4F5F7;
+}
+
+.hero-img {
+	background-image: url("http://i.imgur.com/s1vvYio.jpg");
+	width: 100%;
+	height: 400px;
+	background-size: cover;
+}
+
+.navbar {
+	height: 50px;
+	background-color: white;
+}
+
+.navbar-links {
+	color: #3f3f3f;
+	font-weight: bold;
+}
+
+#navbar-text {
+	color: #3f3f3f;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#bottom {
+	height: 40px;
+	background-color: #3f3f3f;
+	opacity: .8;
+	position: absolute;
+	bottom: 0px;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	font-size: 20px;
+	word-spacing: 60px;
+	width: 100%;
+}
+
+.box {
+	height: 300px;
+	box-shadow: 5px 5px 1px #888888;
+	margin: 10px;
+}
+
+#box1 {
+	border-bottom: 7px solid #66CDAA;
+}
+
+#box2 {
+	border-bottom: 7px solid #BA55D3;
+}
+
+#box3 {
+	border-bottom: 7px solid #6495ED;
+}
+
+#box4 {
+	border-bottom: 7px solid #FF69B4;
+}
+
+#box5 {
+	border-bottom: 7px solid #F4A460;
+}
+
+#box6 {
+	border-bottom: 7px solid #90EE90;
+}
+
+
+.category1 {
+	padding: 35px 0px 5px 0px;
+	margin-right: 45px;
+}
+
+.category2 {
+	padding: 5px 0px 100px 0px;
+	margin-right: 45px;
+}
+
+.image1 {
+	background-image: url("http://d1ya1fm0bicxg1.cloudfront.net/2015/06/promoted-media-optimized_5570c58a5cdff.jpg");
+	height: 150px;
+	background-size: cover
+}
+
+.image2 {
+	background-image: url("http://ashwoodrecovery.com/blog/wp-content/uploads/2015/05/AW-when-social-drinking-becomes-a-problem.jpg");
+	height: 150px;
+	background-size: cover
+}
+
+.image3 {
+	background-image: url("https://incurablystircrazy.files.wordpress.com/2012/04/runner-at-sunset.jpg");
+	height: 150px;
+	background-size: cover
+}
+
+.image4 {
+	background-image: url("http://runthetrap.com/wp-content/uploads/2015/01/redrockscrazy.jpeg");
+	height: 150px;
+	background-size: cover
+}
+
+.image5 {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZfPTy4kSIj8ZRjn63vUOikegkghFSH50-HZB24Uw7w9qr24EpA");
+	height: 150px;
+	background-size: cover
+}
+
+.image6 {
+	background-image: url("http://coloradoairtours.com/images/skydive-colorado2.jpg");
+	height: 150px;
+	background-size: cover
+}
+
+.category-title {
+	font-size: 30px;
+	font-weight: bold;
+	font-family: impact;
+	text-align: center;
+}
+
+.category-description {
+	font-size: 14px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+
+#text1 {
+	color: #66CDAA;
+}
+
+#text2 {
+	color: #BA55D3;
+}
+
+#text3 {
+	color: #6495ED;
+}
+
+#text4 {
+	color: #FF69B4;
+}
+
+#text5 {
+	color: 	#F4A460;
+}
+
+#text6 {
+	color: #90EE90;
+}
+
+footer {
+    position: fixed;
+    height: 40px;
+    bottom: 0;
+    width: 100%;
+    background-color: #3f3f3f;
+}
+
+
+

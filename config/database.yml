@@ -1,0 +1,5 @@
+development:
+  adapter: postgresql
+  database: adventureCO
+production:
+  url: <%= ENV['DATABASE_URL'] %>
