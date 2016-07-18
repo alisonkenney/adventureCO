@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>adventureCO</title>
+  <!-- Set Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- SweetAlerts -->
+    <script src="./sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./sweetalert.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+  <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-12 hero-img">
+              <div class = "row"> 
+                <div class ="col-md-12 header">
+                  <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+                    <a class="navbar-brand navbar-links" id="navbar-text" href="#">AdventureCO</a>
+                    <a class="navbar-brand navbar-links pull-right" href="#">Add an adventure</a>
+                    <a class="navbar-brand navbar-links pull-right" href="/about">About</a>
+                  </nav>    
+                </div>
+              </div>
+
+              <div class = "row">
+                <div class = "col-md-12" id= "bottom">
+                  <p id="text">Imagine Discover Create</p>
+                </div>
+              </div>
+            </div>
+        </div> 
+    
+         <main>
+           <%= yield %>
+         </main>
+
+      <footer class ="row">
+      <footer class="col-md-12">  
+        </footer>   
+      </footer>
+         
+  </div>
+
+</body>
+</html>
