@@ -1,0 +1,25 @@
+<div class="row adventures-title">
+	<div class= "col-md-12">
+		<h1><%= @category.capitalize %></h1>
+	</div>
+</div>
+
+<div class="row">
+	<% @adventures.each do |adventure| %>
+		<div class="row">
+			<div class="col-md-12 col-sm-6">
+				<img src="<%= adventure.photo_url %>">
+					<h1><%= adventure.name %></h1>
+					<div class="adventure-details">
+						<p><%= adventure.description %></p>
+						<p>Price: <%= adventure.price %></p>
+						<p>Address: <%= adventure.location %></p>
+					</div>	
+					<% end %>
+			</div>			
+		</div>	
+
+</div>
+
+
+

@@ -6,6 +6,7 @@ class CreateAdventure < ActiveRecord::Migration
        		t.string :description
        		t.string :photo_url
        		t.string :price
+       		
        		t.timestamps null: true
      end
   end

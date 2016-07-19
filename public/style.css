@@ -2,9 +2,10 @@ body {
     width: 100%;
     height: 100%;
     margin: 0px;
-    padding: 0px;
     overflow-x: hidden; 
     background-color: #F4F5F7;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .hero-img {
@@ -22,6 +23,7 @@ body {
 .navbar-links {
 	color: #3f3f3f;
 	font-weight: bold;
+	font-size: 12px;
 }
 
 #navbar-text {
@@ -42,6 +44,22 @@ body {
 	font-size: 20px;
 	word-spacing: 60px;
 	width: 100%;
+}
+
+.adventures-title {
+}
+
+img {
+	float: left;
+	height: 200px;
+	width: 200px;
+	margin: 15px 15px 15px 15px;
+	border-radius: 50%
+}
+
+.adventure-details {
+	padding-top: 20px;
+	position: relative;
 }
 
 .box {
