@@ -1,4 +1,4 @@
-class Adventure < Sinatra::Base
+class AdventureCO < Sinatra::Base
 	# General route actions
 	get '/' do
 		erb :home

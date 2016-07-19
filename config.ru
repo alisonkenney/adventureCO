@@ -9,4 +9,4 @@ require './models/adventure'
 # Controllers
 require './app'
 
-run Adventure
+run AdventureCO
