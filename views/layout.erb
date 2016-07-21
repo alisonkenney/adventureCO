@@ -6,31 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="/style.css">
 
 </head>
 <body>
 
-  <div class="container-fluid">
+  <div class="container-fluid full-width-container">
+
 
         
     <nav class="navbar navbar-fixed-top navbar-light bg-faded"> 
             <a class="navbar-brand navbar-links" id="navbar-text" href="/">AdventureCO</a>
-            <a class="navbar-brand navbar-links pull-right" href="/adventures/new">Add Adventure</a>
-            <a class="navbar-brand navbar-links pull-right" href="/about">About</a>
+            <a href="#myModal" role="button" data-toggle="modal" class="navbar-brand navbar-links pull-right menu-item">Add Adventure</a>
+            <a class="navbar-brand navbar-links pull-right menu-item" href="/about">About</a>
     </nav>
+
+    <div id="myModal" class="modal fade" role="dialog">
+
+      <div class="modal-dialog modal-md">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h4 class="modal-title">Add Adventure</h4>
+
+          <div class="modal-body">
+
+            <form action="/adventures" method="post">
+                 <label for="adventure[price]">Category:</label>
+                 <select name="adventure[category]">
+                     <option value="Sporting">Sporting</option>
+                     <option value="Social">Social</option>
+                     <option value="Active">Active</option>
+                     <option value="Music">Music</option>
+                     <option value="Family">Family</option>
+                     <option value="Adrenaline">Adrenaline</option>
+                 </select>
+
+                 <label for="adventure[name]">Name:</label>
+                 <input name="adventure[name]">
+
+                 <label for="adventure[description]">Description:</label>
+                 <input name="adventure[description]">
+
+                 <label for="adventure[photo_url]">Photo_url:</label>
+                 <input name="adventure[photo_url]">
+
+                 <label for="adventure[price]">Price:</label>
+                 <select name="adventure[price]">
+                      <option value="free">Free</option>
+                      <option value="$0 - $50">$0 - $50</option>
+                      <option value="$50 - $100">$50 - $100</option>
+                      <option value="$100+">$100+</option>
+                 </select>
+
+                 <label for="adventure[location]">Location:</label>
+                 <input name="adventure[location]">
+
+                 <input type="submit" value="Create">
+             </form>
+
+          </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+</div>
     
          <main>
            <%= yield %>
          </main>
 
-      <footer class ="row">
-      <footer class="col-md-12">  
-        </footer>   
-      </footer>
+      <!-- <footer class ="row">
+        <footer class="col-md-12">
+          <a class="footer-text text-center" href ="/adventures">View All Adventures</a>  
+      </footer>   --> 
+      
+            <footer>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="col-md-2 col-md-offset-5">
+                      <a class="footer-text" href ="/adventures">View All Adventures</a> 
+                    </div>  
+                </div>
+              </div>
+            </div>
+            </footer>
+          
+     
          
   </div>
+
+  <!--Bootstrap JQuery-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- Bootstrap JS CDN--> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </body>
 </html>

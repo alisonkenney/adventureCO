@@ -1,0 +1,41 @@
+<form action='/adventures/<%= "#{@adventure.id}" %>' method="post">
+  	<input name="_method" type="hidden" value="PUT" /> 
+  	<label for="adventure[price]">Category:</label>
+  	<select name="adventure[category]">
+      	<option value="Sporting">Sporting</option>
+      	<option value="Social">Social</option>
+      	<option value="Active">Active</option>
+      	<option value="Music">Music</option>
+      	<option value="Family">Family</option>
+      	<option value="Adrenaline">Adrenaline</option>
+   	</select>
+
+  	<label for="adventure[name]">Name:</label>
+  	<input name="adventure[name]" value='<%= "#{@adventure.name}" %>'>
+
+   	<label for="adventure[description]">Description:</label>
+  	<input name="adventure[description]" value='<%= "#{@adventure.description}" %>'>
+
+  	<label for="adventure[photo_url]">Photo_url:</label>
+  	<input name="adventure[photo_url]" value='<%= "#{@adventure.photo_url}" %>'>
+
+  	<label for="adventure[price]">Price:</label>
+  	<select name="adventure[price]">
+    	<option value="Free">Free</option>
+    	<option value="$0 - $50">$0 - $50</option>
+    	<option value="$50 - $100">$50 - $100</option>
+    	<option value="#$100+">$100+</option>
+  	</select>
+
+  	<label for="adventure[location]">Location:</label>
+  	<input name="adventure[location]" value='<%= "#{@adventure.location}" %>'>
+
+  <input type="submit" value="Update">
+</form>
+
+
+
+
+
+  
+

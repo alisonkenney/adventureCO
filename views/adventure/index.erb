@@ -1,25 +1,51 @@
-<div class="row adventures-title">
+<div class="category-background">
+<div class="overlay"></div>
+<div class="row">
 	<div class= "col-md-12">
-		<h1><%= @category.capitalize %></h1>
+		<h1 class ="<%= @category %>-name"><%= @category.capitalize %></h1>
 	</div>
 </div>
 
-<div class="row">
+
 	<% @adventures.each do |adventure| %>
 		<div class="row">
-			<div class="col-md-12 col-sm-6">
-				<img src="<%= adventure.photo_url %>">
-					<h1><%= adventure.name %></h1>
-					<div class="adventure-details">
-						<p><%= adventure.description %></p>
-						<p>Price: <%= adventure.price %></p>
-						<p>Address: <%= adventure.location %></p>
-					</div>	
-					<% end %>
-			</div>			
-		</div>	
+			<div class="col-md-6 col-md-offset-3">
+				<div class="category-box <%= @category %>-border">
+					<div class="row">
+						<div class="col-md-5">	
+							<img src="<%= adventure.photo_url %>" class="  individual-img">
+						</div>
+						<div class="right-side">
+							<div class="col-md-7">	
+								<h2 class="adventure-titles"><%= adventure.name %></h2>
+								<div class="adventure-details">
+									<p><%= adventure.description %></p>
+									<p><u>Price:</u> <%= adventure.price %></p>
+									<p><u>Address:</u> <%= adventure.location %></p>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-2 col-md-offset-2">
+				        				<a href="/adventures/<%= adventure.id %>/edit">
+				          					<button class="btn <%= @category %>-btn">Edit</button>
+				        				</a>
+				        			</div>	
+				        			<div class="col-md-2">		
+	          							<form method="post" action="/adventures/<%= adventure.id %>">  
+	            						<input name="_method" value="DELETE" type="hidden"/>
+	            							<button class="btn <%= @category %>-btn">Delete</button>
+	          							</form>
+	          						</div>	
+								</div>	
+							</div>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</div>			
+	<% end %>
+</div>	
 
-</div>
 
 
 

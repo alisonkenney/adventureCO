@@ -8,6 +8,16 @@ body {
     padding-top: 50px;
 }
 
+.full-width-container {
+	padding: 0;
+}
+
+.menu-item {
+	font-family: 'Raleway', bold;
+	color: #3f3f3f;
+	font-size: 14px;
+}
+
 .hero-img {
 	background-image: url("http://i.imgur.com/s1vvYio.jpg");
 	width: 100%;
@@ -20,16 +30,10 @@ body {
 	background-color: white;
 }
 
-.navbar-links {
-	color: #3f3f3f;
-	font-weight: bold;
-	font-size: 12px;
-}
-
 #navbar-text {
 	color: #3f3f3f;
-	font-weight: bold;
-	font-size: 20px;
+	font-family: 'Lobster', bold;
+	font-size: 28px;
 }
 
 #bottom {
@@ -42,30 +46,186 @@ body {
 	text-align: center;
 	padding: 5px;
 	font-size: 20px;
-	word-spacing: 60px;
+	word-spacing: 75px;
 	width: 100%;
+	font-family: 'Raleway';
+	font-size: 20px;
 }
 
-.adventures-title {
+.category-background {
+	background-image: url("http://i.imgur.com/s1vvYio.jpg");
+	background-attachment: fixed, scroll;
+  	background-repeat: no-repeat, repeat-y;
+  	background-size: cover;
+  	position: relative;
 }
 
-img {
-	float: left;
+.category-background-show {
+	background-image: url("http://i.imgur.com/s1vvYio.jpg");
+	height: 100%;
+	position: fixed;
+}
+
+.category-box-show {
+	margin-top: 100px;
+}
+
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.individual-img {
+    float: left;
+    border-radius: 20px;
 	height: 200px;
 	width: 200px;
-	margin: 15px 15px 15px 15px;
-	border-radius: 50%
+	margin: 15px 15px 15px 15px;	
+}
+
+.Sporting-name {
+	color: #66CDAA;
+	text-align: center;
+	font-family: 'Lobster';
+}
+
+.Sporting-border {
+	border: 5px solid #66CDAA;;
+}
+
+.Sporting-btn {
+	background-color: #66CDAA;
+	color: white;
+}
+
+.Social-name {
+	color: #BA55D3;
+	text-align: center;
+	font-family: 'Lobster';
+}
+
+.Social-border {
+	border: 5px solid #BA55D3;
+}
+
+.Social-btn {
+	background-color: #BA55D3;
+	color: white;
+}
+
+.Active-name {
+	color: #6495ED;
+	text-align: center;
+	font-family: 'Lobster';
+}
+
+.Active-border {
+	border: 5px solid #6495ED;
+}
+
+.Active-btn {
+	background-color: #6495ED;
+	color: white;
+}
+
+.Music-name {
+	color: #FF69B4;
+	text-align: center;
+	font-family: 'Lobster';
+}
+
+.Music-border {
+	border: 5px solid #FF69B4;
+}
+
+.Music-btn {
+	background-color: #FF69B4;
+	color: white;
+}
+
+.Family-name {
+	color: 	#F4A460;
+	text-align: center;
+	font-family: 'Lobster';
+}
+
+.Family-border {
+	border: 5px solid #F4A460;
+}
+
+.Family-btn {
+	background-color: #F4A460;
+	color: white;
+}
+
+.Adrenaline-name {
+	color: #90EE90;
+	text-align: center;
+	font-family: 'Lobster';
+}
+
+.Adrenaline-border {
+	border: 5px solid #90EE90;
+}
+
+.Adrenaline-btn {
+	background-color: #90EE90;
+	color: white; 
+}
+
+.all-name {
+	color: #B19CD9;
+	text-align: center;
+	font-family: 'Lobster';
+}
+
+.all-border {
+	border: 5px solid #B19CD9;
+}
+
+.all-btn {
+	background-color: #B19CD9;
+	color: white; 
+}
+
+.show-border {
+	border: 5px solid #B19CD9;
+}
+
+.show-btn {
+	background-color: #B19CD9;
+	color: white; 
 }
 
 .adventure-details {
-	padding-top: 20px;
+	padding-top: 10px;
 	position: relative;
+	font-family: 'Raleway';
+	font-weight: 900;
+}
+
+.adventure-titles {
+	font-family: 'Lobster';
+}
+
+.category-box {
+	background-color: #FFFAFA;
+	opacity: .9;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	padding: 5px;
 }
 
 .box {
 	height: 300px;
 	box-shadow: 5px 5px 1px #888888;
 	margin: 10px;
+}
+
+.box:hover {
+	background-color: #DCDCDC;
 }
 
 #box1 {
@@ -92,6 +252,10 @@ img {
 	border-bottom: 7px solid #90EE90;
 }
 
+.btn {
+	margin: 12px;
+	font-family: 'Raleway';
+}
 
 .category1 {
 	padding: 35px 0px 5px 0px;
@@ -144,12 +308,14 @@ img {
 	font-weight: bold;
 	font-family: impact;
 	text-align: center;
+	font-family: 'Lobster', bold;
 }
 
 .category-description {
 	font-size: 14px;
 	text-align: center;
 	color: black;
+	font-family:'Raleway';
 	font-weight: bold;
 }
 
@@ -183,6 +349,14 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #3f3f3f;
+    padding-top: 8px;
+}
+
+.footer-text {
+	color: white;
+	align-items: center;
+	font-family: 'Raleway';
+	margin-left: 30px;
 }
 
 
