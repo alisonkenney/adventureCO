@@ -1,37 +1,80 @@
-<form action='/adventures/<%= "#{@adventure.id}" %>' method="post">
-  	<input name="_method" type="hidden" value="PUT" /> 
-  	<label for="adventure[price]">Category:</label>
-  	<select name="adventure[category]">
-      	<option value="Sporting">Sporting</option>
-      	<option value="Social">Social</option>
-      	<option value="Active">Active</option>
-      	<option value="Music">Music</option>
-      	<option value="Family">Family</option>
-      	<option value="Adrenaline">Adrenaline</option>
-   	</select>
+<div class="edit-background">
+<div class="overlay"></div>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4 form-div">
+        <form action='/adventures/<%= "#{@adventure.id}" %>' method="post">
+          	<input name="_method" type="hidden" value="PUT" /> 
+          	
+            <div class="form-group row form-text">
+              <label for="adventure[price]">Category:</label>
+              <div class="col-md-12">
+              	<select name="adventure[category]" class="form-control input-sm input-field">
+                  	<option value="Sporting">Sporting</option>
+                  	<option value="Social">Social</option>
+                  	<option value="Active">Active</option>
+                  	<option value="Music">Music</option>
+                  	<option value="Family">Family</option>
+                  	<option value="Adrenaline">Adrenaline</option>
+               	</select>
+              </div>
+            </div>
 
-  	<label for="adventure[name]">Name:</label>
-  	<input name="adventure[name]" value='<%= "#{@adventure.name}" %>'>
+            <div class="form-group row form-text">
+          	  <label for="adventure[name]">Name:</label>
+              <div class="col-md-12">
+          	    <input name="adventure[name]" value='<%= "#{@adventure.name}" %>' class="form-control input-sm input-field">
+              </div>
+            </div>    
 
-   	<label for="adventure[description]">Description:</label>
-  	<input name="adventure[description]" value='<%= "#{@adventure.description}" %>'>
+            <div class="form-group row form-text">
+           	  <label for="adventure[description]">Description:</label>
+              <div class="col-md-12">
+          	    <input name="adventure[description]" value='<%= "#{@adventure.description}" %>' class="form-control input-sm input-field">
+              </div>
+            </div>    
 
-  	<label for="adventure[photo_url]">Photo_url:</label>
-  	<input name="adventure[photo_url]" value='<%= "#{@adventure.photo_url}" %>'>
+            <div class="form-group row form-text">
+              <label for="adventure[photo_url]">Photo_url:</label>
+              <div class="col-md-12">
+          	    <input name="adventure[photo_url]" value='<%= "#{@adventure.photo_url}" %>' class="form-control input-sm input-field">
+              </div>
+            </div>
 
-  	<label for="adventure[price]">Price:</label>
-  	<select name="adventure[price]">
-    	<option value="Free">Free</option>
-    	<option value="$0 - $50">$0 - $50</option>
-    	<option value="$50 - $100">$50 - $100</option>
-    	<option value="#$100+">$100+</option>
-  	</select>
+            <div class="form-group row form-text">
+          	  <label for="adventure[price]">Price:</label>
+              <div class="col-md-12">
+              	<select name="adventure[price]" class="form-control input-sm input-field">
+                	<option value="Free">Free</option>
+                	<option value="$0 - $50">$0 - $50</option>
+                	<option value="$50 - $100">$50 - $100</option>
+                	<option value="#$100+">$100+</option>
+              	</select>
+              </div>
+            </div>    
 
-  	<label for="adventure[location]">Location:</label>
-  	<input name="adventure[location]" value='<%= "#{@adventure.location}" %>'>
+            <div class="form-group row form-text">
+          	  <label for="adventure[location]">Location:</label>
+              <div class="col-md-12">
+          	    <input name="adventure[location]" value='<%= "#{@adventure.location}" %>' class="form-control input-sm input-field">
+              </div>
+            </div>    
 
-  <input type="submit" value="Update">
-</form>
+            <div class="form-group row form-text">
+              <label for="adventure[googlemaps_url]">Google Maps URL:</label>
+              <div class="col-md-12">
+                <input name="adventure[googlemaps_url]" value='<%= "#{@adventure.googlemaps_url}" %>' class="form-control input-sm input-field">
+              </div>
+            </div>    
+
+          <input type="submit" value="Update" class="form-control input-sm submit-field" >
+        </form>
+      </div>
+      </div>
+    </div>
+</div>
+
+
 
 
 

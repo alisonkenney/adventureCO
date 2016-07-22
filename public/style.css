@@ -4,7 +4,7 @@ body {
     margin: 0px;
     overflow-x: hidden; 
     background-color: #F4F5F7;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     padding-top: 50px;
 }
 
@@ -36,11 +36,30 @@ body {
 	font-size: 28px;
 }
 
+.video-background {
+	position: relative;
+	overflow: hidden;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	z-index: -100;
+	max-height: 400px;
+}
+.fullscreen-bg__video {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
 #bottom {
 	height: 40px;
 	background-color: #3f3f3f;
 	opacity: .8;
-	position: absolute;
+	position: relative;
 	bottom: 0px;
 	color: white;
 	text-align: center;
@@ -60,6 +79,36 @@ body {
   	position: relative;
 }
 
+.edit-background {
+	background-image: url("http://i.imgur.com/s1vvYio.jpg");
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+  	height: 90vh;
+}
+
+.about {
+	text-align: center;
+	color: white;
+	font-family: 'Raleway';
+	font-size: 30px;
+	margin-top: 100px;
+}
+
+.about-name {
+	color: white;
+	font-family: 'Lobster';
+	font-size: 50px;
+}
+
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #000013;
+	opacity: .6;
+}
+
 .category-background-show {
 	background-image: url("http://i.imgur.com/s1vvYio.jpg");
 	height: 100%;
@@ -68,13 +117,6 @@ body {
 
 .category-box-show {
 	margin-top: 100px;
-}
-
-.overlay {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .individual-img {
@@ -216,6 +258,53 @@ body {
 	border-radius: 20px;
 	margin-bottom: 20px;
 	padding: 5px;
+}
+
+.form-div {
+	text-align: center;
+	padding: 5px;
+	margin-top: 20px;
+	border-radius: 20px;
+	color: grey;
+}
+
+.new-form-div {
+	text-align: center;
+}
+
+.modal-title {
+	font-family: 'Lobster';
+	font-size: 25px;
+	text-align: center;
+}
+
+.input-field {
+	background-color: #FAFAFA;	
+	opacity: .8;
+	color: #36454f;
+	border: 1px solid #29ccc7;
+	font-family: 'Raleway';
+}
+
+.form-text {
+	color: white;
+	font-family: 'Raleway';
+}
+
+.submit-field {
+	background-color: #29ccc7;
+	color: white;
+	font-family: 'Lobster';
+	font-size: 15px;
+	border: 1px solid white;
+}
+
+.about a {
+	color: #29ccc7;
+}
+
+.selection {
+	color: white;
 }
 
 .box {

@@ -14,7 +14,7 @@
 								<div class="adventure-details">
 									<p><%= @adventure.description %></p>
 									<p><u>Price:</u> <%= @adventure.price %></p>
-									<p><u>Address:</u> <%= @adventure.location %></p>
+									<p><u>Address:</u> <a href="<%= @adventure.googlemaps_url %>" target="_blank"> <%= @adventure.location %> </a></p>
 								</div>
 								
 								<div class="row">
