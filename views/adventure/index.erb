@@ -26,13 +26,13 @@
 								<div class="row">
 									<div class="col-md-2 col-md-offset-2">
 				        				<a href="/adventures/<%= adventure.id %>/edit">
-				          					<button class="btn <%= @category %>-btn">Edit</button>
+				          					<button class="btn-style <%= @category %>-btn">Edit</button>
 				        				</a>
 				        			</div>	
 				        			<div class="col-md-2">		
 	          							<form method="post" action="/adventures/<%= adventure.id %>">  
 	            						<input name="_method" value="DELETE" type="hidden"/>
-	            							<button class="btn <%= @category %>-btn">Delete</button>
+	            							<button class="btn-style <%= @category %>-btn">Delete</button>
 	          							</form>
 	          						</div>	
 								</div>	

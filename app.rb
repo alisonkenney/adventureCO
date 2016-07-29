@@ -13,6 +13,14 @@ class AdventureCO < Sinatra::Base
 		erb :about
 	end
 
+  #search by name
+  get '/search' do 
+    @category = "all"
+    @name = params[:search]
+    @adventures = Adventure.where("name LIKE ?", "%#{@name}%").order(:name)
+    erb(:"adventure/index")
+end
+
 	#index
 	get '/adventures' do
 		@category = params[:category] || "all"
